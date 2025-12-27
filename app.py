@@ -181,4 +181,10 @@ if __name__ == "__main__":
     scheduler.start()
 
     print("⏰ Notification scheduler started")
-    app.run(debug=True)
+    # app.run(debug=True)
+    port=os.environ["PORT"]
+    app.run(
+        host="0.0.0.0",   # VERY IMPORTANT
+        port=port,        # VERY IMPORTANT
+        debug=False       # MUST be False in production
+    )
