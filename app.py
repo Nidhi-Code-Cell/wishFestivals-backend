@@ -23,7 +23,7 @@ VAPID_CLAIMS = {
 
 def get_db_connection():
     # db_url = os.getenv("DATABASE_URL")
-    db_url = "postgresql://wishfestivals_db_user:mlI3QHB0b2QYGTg71mZKo7dAMKLkgRf2@dpg-d57q2463jp1c73b4bjsg-a.oregon-postgres.render.com/wishfestivals_db"
+    db_url = "postgresql://user1:2gRx405HQau4j5IVGL0N1Ay11LFKk61N@dpg-d580k063jp1c73b8cr80-a.singapore-postgres.render.com/db1_82rt"
 
     if db_url:
         return psycopg2.connect(db_url, sslmode="require")
